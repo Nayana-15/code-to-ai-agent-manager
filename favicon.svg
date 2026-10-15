@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="nGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="45%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0.6"/>
+    </linearGradient>
+    <style>
+      .bg { fill: #0d1117; }
+      @media (prefers-color-scheme: light) {
+        .bg { fill: #14171a; }
+      }
+    </style>
+  </defs>
+  <!-- Editorial Badge Background -->
+  <rect class="bg" width="32" height="32" rx="7"/>
+  <rect x="0.75" y="0.75" width="30.5" height="30.5" rx="6.25" fill="none" stroke="url(#borderGrad)" stroke-width="1.5" stroke-opacity="0.45"/>
+  <!-- Nayana Monogram: Human Amber -> Editorial White -> Agent Teal -->
+  <path d="M 7 24 V 8 L 18.5 24 V 8" fill="none" stroke="url(#nGrad)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- The .dev Agent Accent Dot -->
+  <circle cx="24" cy="22.8" r="3" fill="#2dd4bf" opacity="0.25"/>
+  <circle cx="24" cy="22.8" r="2" fill="#2dd4bf"/>
+</svg>
